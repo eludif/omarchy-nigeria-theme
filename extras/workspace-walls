@@ -45,8 +45,12 @@ pick() {
   shuf -n1 <<<"$pool"
 }
 
+# show WORKSPACE [fade]
+# Without "fade" the photo swaps instantly, so a workspace switch lands on its
+# own photo instead of visibly cross-fading after arrival. The timer and the
+# hotkey pass "fade", since those are changes you expect to watch.
 show() {
-  local ws=$1 photo
+  local ws=$1 mode=${2:-instant} photo target link
   themed || return 0
   photo=$(get "$ws")
   if [[ -z $photo || ! -f $theme/backgrounds/$photo ]]; then
@@ -54,8 +58,15 @@ show() {
     [[ -n $photo ]] || return 0
     put "$ws" "$photo"
   fi
-  [[ $(readlink -f "$state/omarchy/current/background") == "$(readlink -f "$theme/backgrounds/$photo")" ]] && return 0
-  omarchy theme bg set "$theme/backgrounds/$photo" >/dev/null 2>&1
+  target=$(readlink -f "$theme/backgrounds/$photo")
+  link="$state/omarchy/current/background"
+  [[ $(readlink -f "$link") == "$target" ]] && return 0
+  if [[ $mode == fade ]]; then
+    omarchy theme bg set "$target" >/dev/null 2>&1
+  else
+    ln -nsf "$target" "$link"
+    omarchy-shell -q background setInstant "$target" >/dev/null 2>&1
+  fi
 }
 
 case ${1:-} in
@@ -71,13 +82,13 @@ case ${1:-} in
   shuffle)
     themed || exit 0
     : >"$map"
-    show "$(current_ws)"
+    show "$(current_ws)" fade
     ;;
   next)
     themed || exit 0
     ws=$(current_ws)
     put "$ws" "$(pick "$ws")"
-    show "$ws"
+    show "$ws" fade
     ;;
   *)
     echo "usage: workspace-walls daemon|shuffle|next" >&2
