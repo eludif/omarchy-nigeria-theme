@@ -1,6 +1,6 @@
 #!/bin/bash
 # Optional Omarchy Nigeria extras: the themed lock screen, the desktop photo credit,
-# and 15-minute random wallpaper rotation.
+# a wallpaper per workspace re-dealt every 15 minutes, and a key for a new photo.
 # Run from anywhere, while unlocked, after `omarchy theme set nigeria`.
 #   --replace   move an existing, unrelated lock clone to the backup folder first
 set -euo pipefail
@@ -35,9 +35,10 @@ cp -a "$project/extras/photo-credit" "$credit"
 omarchy-shell shell rescanPlugins >/dev/null 2>&1 || true
 omarchy plugin enable nigeria.photo-credit
 
-# Random wallpaper every 15 minutes, only while a theme with credits.json is active.
+# A wallpaper per workspace, re-dealt every 15 minutes, while a theme with credits.json is active.
+install -m 755 "$project/extras/workspace-walls" "$HOME/.local/bin/nigeria-workspace-walls"
 install -m 755 "$project/extras/rotate-city" "$HOME/.local/bin/nigeria-rotate-city"
-for unit in nigeria-city-rotation.service nigeria-city-rotation.timer; do
+for unit in nigeria-city-rotation.service nigeria-city-rotation.timer nigeria-workspace-walls.service; do
   if [[ -e "$HOME/.config/systemd/user/$unit" ]]; then
     cp -a "$HOME/.config/systemd/user/$unit" "$backup/$unit"
   fi
@@ -45,5 +46,15 @@ for unit in nigeria-city-rotation.service nigeria-city-rotation.timer; do
 done
 systemctl --user daemon-reload
 systemctl --user enable --now nigeria-city-rotation.timer
+systemctl --user enable nigeria-workspace-walls.service
+systemctl --user restart nigeria-workspace-walls.service
+
+# Super+Ctrl+Shift+N: a new random photo for the current workspace.
+bindings="$HOME/.config/hypr/bindings.lua"
+if [[ -f $bindings ]] && ! grep -q "nigeria-workspace-walls next" "$bindings"; then
+  cp -a "$bindings" "$backup/bindings.lua"
+  printf '\n-- Omarchy Nigeria: new random wallpaper for this workspace\no.bind("SUPER + CTRL + SHIFT + N", "Next Nigeria wallpaper", "%s next")\n' "$HOME/.local/bin/nigeria-workspace-walls" >>"$bindings"
+  hyprctl reload >/dev/null 2>&1 || true
+fi
 omarchy restart shell
 printf 'Backup saved to %s\n' "$backup"

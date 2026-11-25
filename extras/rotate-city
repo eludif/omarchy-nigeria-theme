@@ -1,10 +1,7 @@
 #!/bin/bash
-# Show a random wallpaper (never the current one) while the Nigeria theme, or any theme
-# shipping a credits.json photo list, is active.
+# Every 15 minutes (nigeria-city-rotation.timer): deal fresh photos to every
+# workspace while the Nigeria theme, or any theme shipping credits.json, is active.
 set -euo pipefail
 state="${XDG_STATE_HOME:-$HOME/.local/state}/omarchy/current"
 [[ -f "$state/theme/credits.json" ]] || exit 0
-current=$(readlink -f "$state/background" 2>/dev/null || true)
-mapfile -t pool < <(find "$state/theme/backgrounds" -maxdepth 1 -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.webp' \) ! -samefile "${current:-/dev/null}" 2>/dev/null)
-(( ${#pool[@]} > 0 )) || exec omarchy theme bg next
-exec omarchy theme bg set "${pool[RANDOM % ${#pool[@]}]}"
+exec "$HOME/.local/bin/nigeria-workspace-walls" shuffle

@@ -1,5 +1,5 @@
 [Unit]
-Description=Change the Omarchy Nigeria wallpaper every 15 minutes
+Description=Re-deal Omarchy Nigeria wallpapers to workspaces every 15 minutes
 
 [Timer]
 OnStartupSec=15min

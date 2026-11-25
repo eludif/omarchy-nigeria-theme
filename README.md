@@ -40,11 +40,11 @@ To add a photograph: put a 4K landscape original in `backgrounds/` as `NN-place-
 
 ![Omarchy Nigeria lock screen](preview-unlock.png)
 
-Three optional extras, installed together:
+Four optional extras, installed together:
 
 - **Lock screen.** In the style of the omarchy.org homepage: the current wallpaper, sharp and lightly graded toward the theme's greens, with the Omarchy pixel wordmark set straight into it in green, white and green, an **NG** badge, and a compact password field in the proportions of the site's buttons. Dim pixels sit around the edges, with small clusters twinkling on and off as they do on the site. The photographer is credited in the corner. Only the lock's visuals change: it is a fresh clone of Omarchy's current lock plugin, and password checking, failure messages and fingerprint support are untouched. The styling switches on only while the active theme ships `lock-emblem.svg`, so other themes keep the stock lock screen.
 - **Desktop photo credit.** A small pill in the bottom-left corner of the desktop, behind your windows, naming the place and photographer of the current wallpaper. Click it to open the photographer's profile. It reads `credits.json` from the active theme and shows nothing for themes without one.
-- **Random rotation.** Every 15 minutes the wallpaper changes to a random photograph from the set, never the one already showing. It runs only while a theme with `credits.json` is active.
+- **A photo per workspace.** Every workspace gets its own photograph, so switching workspaces cross-fades to a different place in Nigeria, with its credit. Every 15 minutes the photos are dealt out afresh, and **Super+Ctrl+Shift+N** gives the current workspace a new random one straight away. It runs only while a theme with `credits.json` is active; other themes keep Omarchy's single wallpaper.
 
 Install them from a copy of this repository, while unlocked:
 
@@ -54,7 +54,7 @@ cd omarchy-nigeria-theme
 bash extras/install-local.sh            # or --replace if you already have a custom lock clone
 ```
 
-This backs up your shell settings, clones and restyles the lock, installs the photo credit plugin and the rotation timer, and restarts the shell. `omarchy theme install` does not run it. It needs the Omarchy shell plugin system, Python 3, and systemd user services.
+This backs up your shell settings and key bindings, clones and restyles the lock, installs the photo credit plugin, the per-workspace wallpaper service, its 15-minute timer and the Super+Ctrl+Shift+N key, and restarts the shell. `omarchy theme install` does not run it. It needs the Omarchy shell plugin system, Python 3, and systemd user services.
 
 Preview the lock screen without locking (click to dismiss):
 
@@ -62,7 +62,7 @@ Preview the lock screen without locking (click to dismiss):
 omarchy-shell lock preview
 ```
 
-Pause or resume rotation:
+Pause or resume the 15-minute re-deal:
 
 ```bash
 systemctl --user stop nigeria-city-rotation.timer
@@ -81,7 +81,7 @@ Then run `systemctl --user daemon-reload` and `systemctl --user restart nigeria-
 
 To undo the extras:
 
-- **Rotation:** `systemctl --user disable --now nigeria-city-rotation.timer`.
+- **Per-workspace photos:** `systemctl --user disable --now nigeria-workspace-walls.service nigeria-city-rotation.timer`, and remove the `nigeria-workspace-walls` line from `~/.config/hypr/bindings.lua`.
 - **Photo credit:** `omarchy plugin disable nigeria.photo-credit`.
 - **Lock screen:** `omarchy plugin disable "$USER.lock"`, then `omarchy restart shell` while unlocked. When Omarchy updates its lock, re-run the installer with `--replace` to pick up the new version.
 
