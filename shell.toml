@@ -5,7 +5,7 @@
 background = "#1A2A22"
 background-alpha = 1.0
 text = "#DCE7DF"
-active = "#39D98A"
+active = "#F2B93B"
 scale-with-font = true
 size-horizontal = 26
 size-vertical = 28
@@ -67,7 +67,7 @@ text = "#DCE7DF"
 border = "hyprland.active-border"
 border-alpha = 1.0
 border-width = 1
-countdown = "#DCE7DF"
+countdown = "#F2B93B"
 
 [launcher]
 background = "#1A2A22"

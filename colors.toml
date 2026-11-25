@@ -1,4 +1,7 @@
-# Nigeria — Independence Day. Green surfaces, white type, emerald accents.
+# Nigeria. Green surfaces, white type, emerald accents.
+# Syntax colours come from Nigerian craft: adire indigo (functions), aso-oke and
+# coral-jewellery gold (types, warnings), Nok terracotta (numbers), coral-bead red
+# (errors), aso-oke plum (keywords), lagoon teal (operators), Benin bronze.
 # Terminal palette follows Everforest's recipe for long reading sessions:
 # a softened green-grey base, off-white body text (~11:1 rather than a
 # glaring 17:1), and distinct hues at similar brightness. Bold text and the
@@ -15,20 +18,20 @@ foreground = "#DCE7DF"
 dark_foreground = "#6F8A7C"
 light_foreground = "#B5C9BC"
 bright_foreground = "#F5FFF9"
-red = "#EF8A80"
-yellow = "#E3C47A"
-orange = "#EA9F6E"
+red = "#F45F74"
+yellow = "#F2B93B"
+orange = "#E57A44"
 green = "#6FD49B"
-cyan = "#7CCBD0"
-blue = "#86B4E8"
-magenta = "#D79BC4"
-brown = "#A88467"
-bright_red = "#F6A59D"
-bright_yellow = "#EED69A"
+cyan = "#4FCBC0"
+blue = "#7F92FA"
+magenta = "#C185F2"
+brown = "#B58C5A"
+bright_red = "#F8899A"
+bright_yellow = "#F7CF6B"
 bright_green = "#93E3B5"
-bright_cyan = "#A0DCE0"
-bright_blue = "#A8CBF0"
-bright_magenta = "#E5B6D6"
+bright_cyan = "#7FDBD2"
+bright_blue = "#A3B2FB"
+bright_magenta = "#D2A2F7"
 
 # Window borders: focused = bright emerald / white / emerald, left to right like the flag;
 # unfocused = barely-there green, so focus is obvious at a glance.
