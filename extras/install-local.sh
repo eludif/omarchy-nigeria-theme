@@ -1,12 +1,14 @@
 #!/bin/bash
-# Optional Omarchy Nigeria extras: the themed lock screen, the desktop photo credit,
-# a wallpaper per workspace re-dealt every 15 minutes, and a key for a new photo.
+# Optional Omarchy Nigeria lock screen.
 # Run from anywhere, while unlocked, after `omarchy theme set nigeria`.
 #   --replace   move an existing, unrelated lock clone to the backup folder first
+#
+# The photo per workspace, the 15-minute re-deal and the desktop photo credit
+# are a separate plugin:  omarchy plugin add https://github.com/eludif/omarchy-photo-walls --enable
 set -euo pipefail
 project=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)
 backup="$HOME/.local/state/nigeria-theme/backups/$(date +%Y%m%d-%H%M%S)"
-mkdir -p "$backup" "$HOME/.local/bin" "$HOME/.config/systemd/user"
+mkdir -p "$backup"
 cp -a "$HOME/.config/omarchy/shell.json" "$backup/shell.json"
 
 # Lock screen: a fresh clone of Omarchy's current lock, restyled (visuals only).
@@ -28,33 +30,31 @@ if [[ ! -e $clone ]]; then
   python3 "$project/extras/customize-lock.py" "$clone"
 fi
 
-# Desktop photo credit: names the photographer of the current wallpaper.
-credit="$HOME/.config/omarchy/plugins/nigeria.photo-credit"
-if [[ -e $credit ]]; then cp -a "$credit" "$backup/nigeria.photo-credit"; rm -rf "$credit"; fi
-cp -a "$project/extras/photo-credit" "$credit"
-omarchy-shell shell rescanPlugins >/dev/null 2>&1 || true
-omarchy plugin enable nigeria.photo-credit
-
-# A wallpaper per workspace, re-dealt every 15 minutes, while a theme with credits.json is active.
-install -m 755 "$project/extras/workspace-walls" "$HOME/.local/bin/nigeria-workspace-walls"
-install -m 755 "$project/extras/rotate-city" "$HOME/.local/bin/nigeria-rotate-city"
-for unit in nigeria-city-rotation.service nigeria-city-rotation.timer nigeria-workspace-walls.service; do
-  if [[ -e "$HOME/.config/systemd/user/$unit" ]]; then
-    cp -a "$HOME/.config/systemd/user/$unit" "$backup/$unit"
+# Earlier versions installed the wallpaper extras as scripts, services and a key
+# binding. The Photo Walls plugin replaces them, so move what is left into the backup.
+units="$HOME/.config/systemd/user"
+for unit in nigeria-workspace-walls.service nigeria-city-rotation.timer nigeria-city-rotation.service; do
+  if [[ -e $units/$unit ]]; then
+    systemctl --user disable --now "$unit" >/dev/null 2>&1 || true
+    mv "$units/$unit" "$backup/"
   fi
-  install -m 644 "$project/extras/systemd/$unit" "$HOME/.config/systemd/user/$unit"
+done
+for script in nigeria-workspace-walls nigeria-rotate-city; do
+  if [[ -e $HOME/.local/bin/$script ]]; then mv "$HOME/.local/bin/$script" "$backup/"; fi
 done
 systemctl --user daemon-reload
-systemctl --user enable --now nigeria-city-rotation.timer
-systemctl --user enable nigeria-workspace-walls.service
-systemctl --user restart nigeria-workspace-walls.service
-
-# Super+Ctrl+Shift+N: a new random photo for the current workspace.
 bindings="$HOME/.config/hypr/bindings.lua"
-if [[ -f $bindings ]] && ! grep -q "nigeria-workspace-walls next" "$bindings"; then
+if [[ -f $bindings ]] && grep -q "nigeria-workspace-walls next" "$bindings"; then
   cp -a "$bindings" "$backup/bindings.lua"
-  printf '\n-- Omarchy Nigeria: new random wallpaper for this workspace\no.bind("SUPER + CTRL + SHIFT + N", "Next Nigeria wallpaper", "%s next")\n' "$HOME/.local/bin/nigeria-workspace-walls" >>"$bindings"
+  sed -i '/-- Omarchy Nigeria: new random wallpaper for this workspace/d; /nigeria-workspace-walls next/d' "$bindings"
   hyprctl reload >/dev/null 2>&1 || true
 fi
+if [[ -e $HOME/.config/omarchy/plugins/nigeria.photo-credit ]]; then
+  omarchy plugin disable nigeria.photo-credit >/dev/null 2>&1 || true
+  mv "$HOME/.config/omarchy/plugins/nigeria.photo-credit" "$backup/"
+fi
+
 omarchy restart shell
 printf 'Backup saved to %s\n' "$backup"
+echo "For a photo per workspace and photographer credits on the desktop, also run:"
+echo "  omarchy plugin add https://github.com/eludif/omarchy-photo-walls --enable"

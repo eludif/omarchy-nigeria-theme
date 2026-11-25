@@ -1,7 +1,0 @@
-#!/bin/bash
-# Every 15 minutes (nigeria-city-rotation.timer): deal fresh photos to every
-# workspace while the Nigeria theme, or any theme shipping credits.json, is active.
-set -euo pipefail
-state="${XDG_STATE_HOME:-$HOME/.local/state}/omarchy/current"
-[[ -f "$state/theme/credits.json" ]] || exit 0
-exec "$HOME/.local/bin/nigeria-workspace-walls" shuffle
