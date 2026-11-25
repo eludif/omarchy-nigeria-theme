@@ -4,6 +4,8 @@ An Omarchy theme in Nigeria's green and white, with 20 high-resolution photograp
 
 ![Omarchy Nigeria desktop](preview.png)
 
+![Each workspace has its own photo, credited to its photographer, and the lock screen](showcase.gif)
+
 ## Install
 
 ```bash
