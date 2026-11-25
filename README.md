@@ -1,5 +1,9 @@
 # Omarchy Nigeria
 
+![Omarchy Nigeria desktop with Fastfetch in Alacritty, Python in Neovim, and the btop system monitor over Zuma Rock at dusk](preview.png)
+
+*Zuma Rock at dusk, photographed by Mukhtar Shuaib Mukhtar. The desktop shows Fastfetch in Alacritty, Neovim, and btop.*
+
 **Switch workspaces. See a different side of Nigeria.**
 
 ![Each workspace has its own photo, credited to its photographer, and the lock screen](showcase.gif)
@@ -25,8 +29,6 @@ omarchy theme set nigeria
 Use a fresh destination for the first local install. For a photo per workspace with photographer credits, and the lock screen, see [Extras](#extras).
 
 ## Design
-
-![Omarchy Nigeria desktop with Fastfetch, Neovim, and btop over Zuma Rock at dusk](preview.png)
 
 Soft green surfaces (`#1A2A22`), off-white text (`#DCE7DF`), and emerald accents (`#39D98A`). The code colours come from Nigerian craft rather than a generic pastel set: **adire indigo** for functions, **aso-oke gold** for types and warnings, **Nok terracotta** for numbers, **coral-bead red** for errors, **aso-oke plum** for keywords and **lagoon teal** for operators. The bar's alerts and the notification countdown are gold too. The terminal palette follows Everforest's approach to long reading sessions: a softened base, body text around 12:1 rather than a glaring pure white, and distinct hues at similar brightness, so errors, warnings, strings and comments stay easy to tell apart. Focused windows get an emerald / white / emerald border, like the flag; unfocused borders almost disappear.
 
