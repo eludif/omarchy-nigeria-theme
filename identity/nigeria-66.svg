@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<title>Nigeria — Sixty-six years of independence, 1960–2026</title>
+<desc>A formal commemorative composition in midnight green, ivory and muted brass, with the Nigerian flag and monumental serif typography.</desc>
+<defs>
+ <linearGradient id="field" x2="1" y2="1"><stop stop-color="#102D24"/><stop offset="1" stop-color="#061510"/></linearGradient>
+ <linearGradient id="metal"><stop stop-color="#B2A27A"/><stop offset=".5" stop-color="#E0D5B6"/><stop offset="1" stop-color="#928565"/></linearGradient>
+ <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse"><path d="M64 0H0V64" fill="none" stroke="#D4E4D7" stroke-opacity=".025"/></pattern>
+</defs>
+<rect width="1920" height="1080" fill="url(#field)"/>
+<rect width="1920" height="1080" fill="url(#grid)"/>
+<g fill="none" stroke="#AF9F79" stroke-opacity=".55">
+ <path d="M100 158H1820 M100 966H1820"/>
+ <path d="M100 178V158H120 M1800 158H1820V178 M100 946V966H120 M1800 966H1820V946" stroke-width="3"/>
+ <path d="M1110 248V754" stroke-opacity=".24"/>
+</g>
+<g font-family="DejaVu Sans, sans-serif" fill="#D8E3DA">
+ <text x="100" y="117" font-size="20" letter-spacing="5">FEDERAL REPUBLIC OF NIGERIA</text>
+ <text x="1820" y="117" text-anchor="end" font-size="18" letter-spacing="4" fill="#C4B58F">INDEPENDENCE DAY / 2026</text>
+ <text x="106" y="292" font-size="18" letter-spacing="6" fill="#C4B58F">THE INDEPENDENCE ANNIVERSARY</text>
+</g>
+<g font-family="Noto Serif, serif" fill="#F1F0E7">
+ <text x="93" y="475" font-size="164" letter-spacing="-6">Nigeria.</text>
+ <text x="102" y="568" font-size="54">A nation. An enduring spirit.</text>
+</g>
+<path d="M106 623H194" stroke="url(#metal)" stroke-width="3"/>
+<g font-family="DejaVu Sans, sans-serif">
+ <text x="106" y="690" font-size="27" fill="#D4DED5">Celebrating 66 years of independence.</text>
+ <text x="106" y="737" font-size="22" fill="#94AA9C" letter-spacing="2">1 OCTOBER 1960 — 1 OCTOBER 2026</text>
+</g>
+<!-- National flag: equal green-white-green vertical bands, 2:1 ratio. -->
+<g transform="translate(1252 247)">
+ <rect x="-9" y="-9" width="426" height="222" fill="none" stroke="#B7A57D" stroke-opacity=".55"/>
+ <rect width="136" height="204" fill="#008751"/>
+ <rect x="136" width="136" height="204" fill="#FFFFFF"/>
+ <rect x="272" width="136" height="204" fill="#008751"/>
+</g>
+<text x="1456" y="682" text-anchor="middle" font-family="Noto Serif, serif" font-size="244" fill="url(#metal)" letter-spacing="-12">66</text>
+<text x="1456" y="738" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="19" fill="#D8E3DA" letter-spacing="5">YEARS OF INDEPENDENCE</text>
+<path d="M100 818H1820" stroke="#AF9F79" stroke-opacity=".18"/>
+<g font-family="DejaVu Sans, sans-serif" font-size="16" letter-spacing="3">
+ <text x="100" y="1015" fill="#92A89A">01 / 10 / 2026</text>
+ <text x="960" y="1015" text-anchor="middle" fill="#C4B58F">1960 — 2026</text>
+ <text x="1820" y="1015" text-anchor="end" fill="#92A89A">UNITY · PEACE · PROGRESS</text>
+</g>
+</svg>

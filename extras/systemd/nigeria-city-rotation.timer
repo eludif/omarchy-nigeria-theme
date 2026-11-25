@@ -1,0 +1,10 @@
+[Unit]
+Description=Change the Omarchy Nigeria wallpaper every 15 minutes
+
+[Timer]
+OnStartupSec=15min
+OnUnitActiveSec=15min
+AccuracySec=10s
+
+[Install]
+WantedBy=timers.target

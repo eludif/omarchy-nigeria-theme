@@ -1,0 +1,36 @@
+# Nigeria — Independence Day. Green surfaces, white type, emerald accents.
+# Terminal palette follows Everforest's recipe for long reading sessions:
+# a softened green-grey base, off-white body text (~11:1 rather than a
+# glaring 17:1), and distinct hues at similar brightness. Bold text and the
+# window borders keep the flag's bright white.
+mode = "dark"
+accent = "#39D98A"
+selection = "#2F5A44"
+muted = "#7E9A8B"
+background = "#1A2A22"
+dark_background = "#14221B"
+darker_background = "#0F1A15"
+lighter_background = "#24372D"
+foreground = "#DCE7DF"
+dark_foreground = "#6F8A7C"
+light_foreground = "#B5C9BC"
+bright_foreground = "#F5FFF9"
+red = "#EF8A80"
+yellow = "#E3C47A"
+orange = "#EA9F6E"
+green = "#6FD49B"
+cyan = "#7CCBD0"
+blue = "#86B4E8"
+magenta = "#D79BC4"
+brown = "#A88467"
+bright_red = "#F6A59D"
+bright_yellow = "#EED69A"
+bright_green = "#93E3B5"
+bright_cyan = "#A0DCE0"
+bright_blue = "#A8CBF0"
+bright_magenta = "#E5B6D6"
+
+# Window borders: focused = bright emerald / white / emerald, left to right like the flag;
+# unfocused = barely-there green, so focus is obvious at a glance.
+hyprland_active_border = "rgba(39d98aff) rgba(f5fff9ff) rgba(39d98aff) 0deg"
+hyprland_inactive_border = "rgba(24372dcc)"

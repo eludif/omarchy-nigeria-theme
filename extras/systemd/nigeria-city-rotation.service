@@ -1,0 +1,7 @@
+[Unit]
+Description=Show a random Omarchy Nigeria wallpaper while the Nigeria theme is active
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/nigeria-rotate-city
+Environment=PATH=/usr/local/bin:/usr/bin:/bin:/usr/share/omarchy/bin
