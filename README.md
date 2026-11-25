@@ -1,10 +1,12 @@
 # Omarchy Nigeria
 
-An Omarchy theme in Nigeria's green and white, with 20 high-resolution photographs of Nigerian places, each credited to the person who took it.
-
-![Omarchy Nigeria desktop](preview.png)
+**Switch workspaces. See a different side of Nigeria.**
 
 ![Each workspace has its own photo, credited to its photographer, and the lock screen](showcase.gif)
+
+Go from the Obudu Plateau to the Emir’s Palace in Dutse to Zuma Rock as you switch workspaces. The optional [Photo Walls plugin](#photo-walls-plugin) gives each workspace its own wallpaper and shows the place and photographer on screen.
+
+The base Omarchy theme pairs Nigeria’s green and white with 20 credited photographs from across the country.
 
 ## Install
 
