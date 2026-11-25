@@ -1,6 +1,6 @@
 # Omarchy Nigeria
 
-An Omarchy theme in Nigeria's green and white, with 20 high-resolution photographs of Nigerian places, each credited to the person who took it. Designed for a blog-led release around 1 October.
+An Omarchy theme in Nigeria's green and white, with 20 high-resolution photographs of Nigerian places, each credited to the person who took it.
 
 ![Omarchy Nigeria desktop](preview.png)
 
