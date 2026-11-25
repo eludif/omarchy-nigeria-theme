@@ -1,8 +1,8 @@
 # Omarchy Nigeria
 
-![Omarchy Nigeria desktop with Fastfetch in Alacritty, Python in Neovim, and the btop system monitor over Zuma Rock at dusk](preview.png)
+![Omarchy Nigeria desktop with Fastfetch in Alacritty, Python in Neovim, and the btop system monitor over the Emir’s Palace in Dutse](preview.png)
 
-*Zuma Rock at dusk, photographed by Mukhtar Shuaib Mukhtar. The desktop shows Fastfetch in Alacritty, Neovim, and btop.*
+*The Emir’s Palace in Dutse, photographed by Sani Maikatanga. The desktop shows Fastfetch in Alacritty, Neovim, and btop.*
 
 **Switch workspaces. See a different side of Nigeria.**
 
