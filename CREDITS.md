@@ -4,7 +4,7 @@ Every wallpaper in this theme exists because someone stood in a particular place
 
 Their names also appear on your desktop and lock screen whenever their photograph is showing. Click the name on the desktop to visit their profile. If you enjoy one of these photographs, go and look at the rest of their work.
 
-The files in `backgrounds/` are the photographers' originals, unchanged except where a section says it was cropped. The previews on this page are smaller copies.
+The images on this page are the wallpapers themselves, from `backgrounds/`: the photographers' originals, unchanged except where a section says it was cropped.
 
 **Photographers:** Abduljalil Attahir, Abdulrahman Abubakar, Ahbee Photography, Barnabas Sani, Ben Iwara, Blessing Niniola, Deen Docs, Kureng Workx, Laminartosin, LekePOV, Mukhtar Shuaib Mukhtar, Paul Uchechukwu, PIXPECTIV, Sani Maikatanga, Shurhabil Bukhari, Stuffedbox NG, Tosin James
 
@@ -12,7 +12,7 @@ The files in `backgrounds/` are the photographers' originals, unchanged except w
 
 ## Obudu Plateau, Cross River State
 
-![Obudu Plateau, Cross River State](docs/gallery/01-obudu-plateau-by-laminartosin.jpg)
+![Obudu Plateau, Cross River State](backgrounds/01-obudu-plateau-by-laminartosin.jpg)
 
 **Laminartosin** · [see more of their work](https://commons.wikimedia.org/wiki/Special:ListFiles/Laminartosin)
 
@@ -24,7 +24,7 @@ Ridge after ridge of green mountains on the plateau near the Cameroon border, ta
 
 ## National Theatre, Lagos
 
-![National Theatre, Lagos](docs/gallery/02-national-theatre-lagos-by-paul-uchechukwu.jpg)
+![National Theatre, Lagos](backgrounds/02-national-theatre-lagos-by-paul-uchechukwu.jpg)
 
 **Paul Uchechukwu** · [see more of their work](https://www.pexels.com/@paul-uchechukwu-246994638/)
 
@@ -36,7 +36,7 @@ Completed in 1976 for FESTAC '77 and often compared to a military cap, reflected
 
 ## A rocky pass at sunrise
 
-![A rocky pass at sunrise](docs/gallery/03-rocky-pass-at-sunrise-by-kureng-workx.jpg)
+![A rocky pass at sunrise](backgrounds/03-rocky-pass-at-sunrise-by-kureng-workx.jpg)
 
 **Kureng Workx** · [see more of their work](https://www.pexels.com/@kureng-workx-2546437/)
 
@@ -48,7 +48,7 @@ A road threading between towering rock walls as the sun comes up.
 
 ## Carter Bridge, Lagos
 
-![Carter Bridge, Lagos](docs/gallery/04-carter-bridge-lagos-by-ben-iwara.jpg)
+![Carter Bridge, Lagos](backgrounds/04-carter-bridge-lagos-by-ben-iwara.jpg)
 
 **Ben Iwara** · [see more of their work](https://www.pexels.com/@ben-iwara-1033992193/)
 
@@ -60,7 +60,7 @@ Carter Bridge stretching across the lagoon between Lagos Island and the mainland
 
 ## National Mosque, Abuja
 
-![National Mosque, Abuja](docs/gallery/05-national-mosque-abuja-by-blessing-niniola.jpg)
+![National Mosque, Abuja](backgrounds/05-national-mosque-abuja-by-blessing-niniola.jpg)
 
 **Blessing Niniola** · [see more of their work](https://www.pexels.com/@blessing-niniola-650496724/)
 
@@ -72,7 +72,7 @@ The golden dome and four minarets of the National Mosque rising over an Abuja st
 
 ## Emir's Palace, Dutse
 
-![Emir's Palace, Dutse](docs/gallery/06-emirs-palace-dutse-by-sani-maikatanga.jpg)
+![Emir's Palace, Dutse](backgrounds/06-emirs-palace-dutse-by-sani-maikatanga.jpg)
 
 **Sani Maikatanga** · [see more of their work](https://www.pexels.com/@sanimaikatanga/)
 
@@ -84,7 +84,7 @@ The patterned green and gold facade of the Emir's Palace in Dutse, Jigawa State.
 
 ## Lagos coastline from above
 
-![Lagos coastline from above](docs/gallery/07-lagos-coastline-by-ben-iwara.jpg)
+![Lagos coastline from above](backgrounds/07-lagos-coastline-by-ben-iwara.jpg)
 
 **Ben Iwara** · [see more of their work](https://www.pexels.com/@ben-iwara-1033992193/)
 
@@ -96,7 +96,7 @@ Atlantic surf breaking along the Lagos shoreline, seen from the air.
 
 ## Zuma Rock, Niger State
 
-![Zuma Rock, Niger State](docs/gallery/08-zuma-rock-at-dusk-by-mukhtar-shuaib-mukhtar.jpg)
+![Zuma Rock, Niger State](backgrounds/08-zuma-rock-at-dusk-by-mukhtar-shuaib-mukhtar.jpg)
 
 **Mukhtar Shuaib Mukhtar** · [see more of their work](https://www.pexels.com/@akoonie/)
 
@@ -108,7 +108,7 @@ The great granite monolith on the ₦100 note, standing over the rooftops of the
 
 ## Civic Centre Towers, Lagos
 
-![Civic Centre Towers, Lagos](docs/gallery/09-civic-centre-lagos-by-paul-uchechukwu.jpg)
+![Civic Centre Towers, Lagos](backgrounds/09-civic-centre-lagos-by-paul-uchechukwu.jpg)
 
 **Paul Uchechukwu** · [see more of their work](https://www.pexels.com/@paul-uchechukwu-246994638/)
 
@@ -120,7 +120,7 @@ The green-glass Civic Centre Towers rising above the Lagos waterfront under a br
 
 ## Abuja City Gate
 
-![Abuja City Gate](docs/gallery/10-abuja-city-gate-by-stuffedbox-ng.jpg)
+![Abuja City Gate](backgrounds/10-abuja-city-gate-by-stuffedbox-ng.jpg)
 
 **Stuffedbox NG** · [see more of their work](https://www.pexels.com/@stuffedbox-ng-513424808/)
 
@@ -132,7 +132,7 @@ The city gate on the road into Abuja: two white pillars holding a green-white-gr
 
 ## Rocks and water, Bauchi
 
-![Rocks and water, Bauchi](docs/gallery/11-bauchi-rocks-and-water-by-ahbee-photography.jpg)
+![Rocks and water, Bauchi](backgrounds/11-bauchi-rocks-and-water-by-ahbee-photography.jpg)
 
 **Ahbee Photography** · [see more of their work](https://www.pexels.com/@ahbee-photography-463652994/)
 
@@ -144,7 +144,7 @@ A great dome of rock above clear water in Bauchi State.
 
 ## Coronation Hall gate, Kano
 
-![Coronation Hall gate, Kano](docs/gallery/12-coronation-hall-kano-by-sani-maikatanga.jpg)
+![Coronation Hall gate, Kano](backgrounds/12-coronation-hall-kano-by-sani-maikatanga.jpg)
 
 **Sani Maikatanga** · [see more of their work](https://www.pexels.com/@sanimaikatanga/)
 
@@ -156,7 +156,7 @@ The sculpted gate at Coronation Hall, a Kano landmark, crowned with long trumpet
 
 ## Riverbanks, Port Harcourt
 
-![Riverbanks, Port Harcourt](docs/gallery/13-port-harcourt-riverbanks-by-pixpectiv.jpg)
+![Riverbanks, Port Harcourt](backgrounds/13-port-harcourt-riverbanks-by-pixpectiv.jpg)
 
 **PIXPECTIV** · [see more of their work](https://www.pexels.com/@pixpectiv-633410537/)
 
@@ -168,7 +168,7 @@ Creeks winding through Port Harcourt, with a bridge and rooftops at the water's 
 
 ## Ngel Nyaki, Taraba State
 
-![Ngel Nyaki, Taraba State](docs/gallery/14-ngel-nyaki-hills-by-barnabas-sani.jpg)
+![Ngel Nyaki, Taraba State](backgrounds/14-ngel-nyaki-hills-by-barnabas-sani.jpg)
 
 **Barnabas Sani** · [see more of their work](https://www.pexels.com/@barrytheoctopus/)
 
@@ -180,7 +180,7 @@ Rolling golden-green hills around Ngel Nyaki on the Mambilla Plateau.
 
 ## Gidan Makama, Kano
 
-![Gidan Makama, Kano](docs/gallery/15-gidan-makama-kano-by-lekepov.jpg)
+![Gidan Makama, Kano](backgrounds/15-gidan-makama-kano-by-lekepov.jpg)
 
 **LekePOV** · [see more of their work](https://www.pexels.com/@lekepov-2044219506/)
 
@@ -192,7 +192,7 @@ A centuries-old palace that now houses the National Museum, its carved earthen w
 
 ## Central Mosque, Kaduna
 
-![Central Mosque, Kaduna](docs/gallery/16-kaduna-mosque-from-above-by-abdulrahman-abubakar.jpg)
+![Central Mosque, Kaduna](backgrounds/16-kaduna-mosque-from-above-by-abdulrahman-abubakar.jpg)
 
 **Abdulrahman Abubakar** · [see more of their work](https://www.pexels.com/@abdulrahman-abubakar-501847670/)
 
@@ -204,7 +204,7 @@ Four white minarets and a green roof among the trees and streets of Kaduna, seen
 
 ## A waterfall in Kaduna
 
-![A waterfall in Kaduna](docs/gallery/17-kaduna-waterfall-by-shurhabil-bukhari.jpg)
+![A waterfall in Kaduna](backgrounds/17-kaduna-waterfall-by-shurhabil-bukhari.jpg)
 
 **Shurhabil Bukhari** · [see more of their work](https://www.pexels.com/@shurhabil-bukhari-279975050/)
 
@@ -216,7 +216,7 @@ Water cascading over warm-coloured rock, framed by grass, in Kaduna State.
 
 ## Savannah and hills
 
-![Savannah and hills](docs/gallery/18-savannah-and-hills-by-abduljalil-attahir.jpg)
+![Savannah and hills](backgrounds/18-savannah-and-hills-by-abduljalil-attahir.jpg)
 
 **Abduljalil Attahir** · [see more of their work](https://www.pexels.com/@abduljalil-attahir-2151751712/)
 
@@ -228,7 +228,7 @@ Golden Nigerian savannah dotted with trees, with hills rising in the haze beyond
 
 ## A palm-lined beach, Lagos
 
-![A palm-lined beach, Lagos](docs/gallery/19-lagos-palm-beach-by-tosin-james.jpg)
+![A palm-lined beach, Lagos](backgrounds/19-lagos-palm-beach-by-tosin-james.jpg)
 
 **Tosin James** · [see more of their work](https://www.pexels.com/@tosinjames/)
 
@@ -240,7 +240,7 @@ Palm trees leaning over a quiet stretch of Lagos shoreline.
 
 ## A stadium from above
 
-![A stadium from above](docs/gallery/20-stadium-from-above-by-deen-docs.jpg)
+![A stadium from above](backgrounds/20-stadium-from-above-by-deen-docs.jpg)
 
 **Deen Docs** · [see more of their work](https://www.pexels.com/@deen-docs-2151173653/)
 
