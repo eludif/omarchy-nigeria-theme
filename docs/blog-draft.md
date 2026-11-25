@@ -8,7 +8,9 @@ The wallpapers are twenty high-resolution photographs: the National Theatre and 
 
 The theme is built for Omarchy, using a small palette file that its templates turn into application settings. The aim is something simple enough to install, adapt, and share.
 
-<!-- Before publication: add a real screenshot, the repository URL, tested Omarchy version, and the verified installation command. -->
+To try it, run `omarchy theme install https://github.com/eludif/omarchy-nigeria-theme`.
+
+<!-- Before publication: add a real screenshot (preview.png), confirm the tested Omarchy version (4.5.0 so far), and verify the install on a second machine. -->
 
 More Nigerian cities can join the collection over time. Contributions should include an original high-resolution landscape photograph, its location, photographer credit, and a licence permitting redistribution.
 

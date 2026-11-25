@@ -7,7 +7,7 @@ An Omarchy theme in Nigeria's green and white, with 20 high-resolution photograp
 ## Install
 
 ```bash
-omarchy theme install <repository-url>
+omarchy theme install https://github.com/eludif/omarchy-nigeria-theme
 ```
 
 This installs and applies the theme as `nigeria`. To work from a local copy of this repository instead:
@@ -46,9 +46,11 @@ Three optional extras, installed together:
 - **Desktop photo credit.** A small pill in the bottom-left corner of the desktop, behind your windows, naming the place and photographer of the current wallpaper. Click it to open the photographer's profile. It reads `credits.json` from the active theme and shows nothing for themes without one.
 - **Random rotation.** Every 15 minutes the wallpaper changes to a random photograph from the set, never the one already showing. It runs only while a theme with `credits.json` is active.
 
-Install them from this repository, while unlocked:
+Install them from a copy of this repository, while unlocked:
 
 ```bash
+git clone https://github.com/eludif/omarchy-nigeria-theme
+cd omarchy-nigeria-theme
 bash extras/install-local.sh            # or --replace if you already have a custom lock clone
 ```
 
